@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previllage Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page"></body>
+
+<div class="header">
+
+    <img src="{{ url_for('static', filename='images/logo.png') }}"
+         class="school-logo">
+
+    <h1>PREVILLAGE ACADEMY</h1>
+
+    <h3>Task For Excellence</h3>
+
+    <script>
+window.onload = function() {
+
+    let today = new Date().toDateString();
+
+    if(localStorage.getItem("lastVisit") !== today){
+        document.getElementById("welcome-popup").style.display = "flex";
+        localStorage.setItem("lastVisit", today);
+    } else {
+        document.getElementById("welcome-popup").style.display = "none";
+    }
+}
+
+function closePopup(){
+    document.getElementById("welcome-popup").style.display = "none";
+}
+</script>
+
+</div>
+
+<div class="menu">
+    <a href="/admin">Admin Login</a>
+    <a href="/teacher">Teacher Login</a>
+    <a href="/student">Student login</a>
+</div>
+
+<div class="banner">
+    <h2>Welcome to Previllage Academy School Management Portal</h2>
+    <p>
+        Manage student records, attendance, fees and examination results online.
+    </p>
+</div>
+
+<h2 class="gallery-title">School Gallery</h2>
+
+<div class="gallery">
+
+    <img src="{{ url_for('static', filename='images/school1.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/school2.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/school3.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/school4.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/school5.png') }}">
+
+</div>
+
+<div class="footer">
+    <p>© 2026 Previllage Academy | Motto: Task For Excellence</p>
+        <p>Email:previllage26@gmail.com</p>
+        <P>Tiktok:Previllageacademy26</P>
+</div>
+
+</body>
+</html>

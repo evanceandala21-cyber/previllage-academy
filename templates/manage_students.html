@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manage Students</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Manage Students</h1>
+
+<table>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Admission</th>
+<th>Year</th>
+<th>Class</th>
+<th>Action</th>
+</tr>
+
+{% for s in students %}
+<tr>
+<td>{{ s[0] }}</td>
+<td>{{ s[1] }}</td>
+<td>{{ s[2] }}</td>
+<td>{{ s[3] }}</td>
+<td>{{ s[4] }}</td>
+<td>
+<a href="/edit_student/{{ s[0] }}">Edit</a>
+<a href="/delete_student/{{ s[0] }}">Delete</a>
+</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">Back</a>
+
+</body>
+</html>

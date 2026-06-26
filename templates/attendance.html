@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Attendance Register</h2>
+
+<form method="POST" action="/save_attendance">
+
+<input type="date" name="date">
+
+<table>
+<tr>
+<th>Name</th><th>Admission</th><th>Present</th>
+</tr>
+
+{% for s in students %}
+<tr>
+<td>{{ s[1] }}</td>
+<td>{{ s[2] }}</td>
+<td>
+<input type="checkbox" name="attendance_{{ s[2] }}" value="Present">
+</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<button>Save</button>
+</form>
+
+</body>
+</html>

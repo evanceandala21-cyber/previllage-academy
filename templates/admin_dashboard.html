@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body><div class="menu">
+
+<div class="admin-buttons">
+
+<button onclick="location.href='/add_student'">
+➕ Add Student
+</button>
+
+<button onclick="location.href='/search_student'">
+🔍 Search Student
+</button>
+
+<button onclick="location.href='/manage_students'">
+✏️ Edit Students
+</button>
+
+<button onclick="location.href='/manage_students'">
+❌ Delete Students
+</button>
+
+<button onclick="location.href='/manage_teachers'">
+👨‍🏫 Manage Teachers
+</button>
+
+<button onclick="location.href='/print_reports'">
+🖨️ Print Reports
+</button>
+
+<button onclick="location.href='/performance_analysis'">
+📈 Performance Analysis
+</button>
+
+<button onclick="location.href='/fees'">
+💰 Fees Management
+</button>
+
+<button onclick="location.href='/attendance_records'">
+📋 Attendance Records
+</button>
+
+<button onclick="location.href='/results'">
+📊 Results Summary
+</button>
+
+<button onclick="location.href='/logout'">
+🚪 Logout
+</button>
+
+</div>

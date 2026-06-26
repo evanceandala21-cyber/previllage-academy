@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>{{ student[1] }} </h1>
+<H2>Results</H2>
+
+<table>
+<tr><th>Subject</th><th>Marks</th></tr>
+
+{% for r in results %}
+<tr>
+<td>{{ r[0] }}</td>
+<td>{{ r[1] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Total: {{ total_marks }}</h3>
+<h3>Mean: {{ mean_score }}</h3>
+<h3>Fee Balance: {{ balance }}</h3>
+
+<button onclick="window.print()">Print</button>
+
+</body>
+</html>

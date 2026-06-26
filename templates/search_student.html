@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Student</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Search Student</h1>
+
+<form method="POST">
+
+<input type="text"
+       name="keyword"
+       placeholder="Enter Name or Admission Number"
+       required>
+
+<button type="submit">
+Search
+</button>
+
+</form>
+
+<br>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Admission</th>
+<th>Year</th>
+<th>Class</th>
+</tr>
+
+{% for s in students %}
+<tr>
+<td>{{ s[0] }}</td>
+<td>{{ s[1] }}</td>
+<td>{{ s[2] }}</td>
+<td>{{ s[3] }}</td>
+<td>{{ s[4] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">Back to Dashboard</a>
+
+</body>
+</html>

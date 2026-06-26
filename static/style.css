@@ -1,0 +1,240 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#d88c8c;
+}
+
+.header{
+    background:rgb(23, 131, 131);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:180px;
+    height:200px;
+    border-radius:50%;
+}
+
+.menu{
+    background:#006400;
+    text-align:center;
+    padding:15px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:yellow;
+}
+
+.banner{
+    text-align:center;
+    padding:40px;
+    background:white;
+}
+
+.gallery-title{
+    text-align:center;
+    color:green;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    margin:10px;
+    border-radius:10px;
+}
+
+.footer{
+    background:green;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+.container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h1,h2{
+    color:rgb(103, 216, 58);
+    text-align:center;
+}
+
+input{
+    width:70%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#006400;
+}
+
+a{
+    color:green;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table, th, td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:green;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:8px;
+}
+select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.menu{
+    text-align:center;
+    margin:20px;
+}
+
+.menu a{
+    display:inline-block;
+    background:green;
+    color:white;
+    padding:12px 20px;
+    margin:5px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#006400;
+}
+.menu{
+    text-align:center;
+    margin:20px;
+}
+
+.menu a{
+    display:inline-block;
+    background:green;
+    color:white;
+    padding:12px 20px;
+    margin:5px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#006400;
+}
+.home-page{
+    background:#e8f5e9;
+}
+
+.admin-page{
+    background:#fff3e0;
+}
+
+.teacher-page{
+    background:#e3f2fd;
+}
+
+.student-page{
+    background:#f3e5f5;
+}
+.school-logo{
+    width:200px;
+    height:auto;
+}
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-content{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    width:400px;
+}
+
+.popup-content h2{
+    color:green;
+}
+
+.popup-content button{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+.admin-buttons button{
+    background:green;
+    color:white;
+    padding:8px 12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:13px;
+    width:180px;
+}

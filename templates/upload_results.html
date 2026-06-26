@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Upload Results</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <label><b>Select Class</b></label>
+        <select name="class_name" required>
+            <option value="">-- Select Class --</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Form 1">Form 1</option>
+            <option value="Form 2">Form 2</option>
+            <option value="Form 3">Form 3</option>
+            <option value="Form 4">Form 4</option>
+        </select>
+
+        <br><br>
+
+        <label><b>Select CSV File</b></label>
+        <input type="file" name="csvfile" accept=".csv" required>
+
+        <br><br>
+
+        <button type="submit">Upload Results</button>
+
+    </form>
+
+    <br>
+
+    <a href="/teacher_dashboard">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

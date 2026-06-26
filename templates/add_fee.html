@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Fee Record</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Add Fee Record</h1>
+
+<form method="POST">
+
+    <input type="text"
+           name="admission"
+           placeholder="Admission Number"
+           required>
+
+    <input type="number"
+           name="total_fee"
+           placeholder="Total Fee"
+           required>
+
+    <input type="number"
+           name="amount_paid"
+           placeholder="Amount Paid"
+           required>
+
+    <button type="submit">Save Fee Record</button>
+
+</form>
+
+<br>
+<a href="/fees">Back</a>
+
+</body>
+</html>

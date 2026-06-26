@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Teacher Login</h2>
+{% if message %}
+<p style="color:red; text-align:center;">
+    {{ message }}
+</p>
+{% endif %}
+
+<form method="POST">
+<input name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<button>Login</button>
+</form>
+
+</body>
+</html>

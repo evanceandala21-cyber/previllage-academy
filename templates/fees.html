@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fees Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Fees Records</h1>
+
+<a href="/add_fee">Add Fee Record</a>
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Admission</th>
+    <th>Total Fee</th>
+    <th>Amount Paid</th>
+    <th>Balance</th>
+</tr>
+
+{% for f in fees_data %}
+<tr>
+    <td>{{ f[0] }}</td>
+    <td>{{ f[1] }}</td>
+    <td>{{ f[2] }}</td>
+    <td>{{ f[3] }}</td>
+    <td>{{ f[2] - f[3] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+<a href="/admin_dashboard">Back to Dashboard</a>
+
+</body>
+</html>
